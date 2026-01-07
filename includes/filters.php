@@ -31,11 +31,15 @@ function guttenbergEditorSettings(array $settings): array
         $current_user_roles = $user->roles;
         $add_to_roles = ["editor", "author"];
 
-        if (in_array($add_to_roles, $current_user_roles) && !in_array("administrator", $current_user_roles)) {
-            $settings = array_merge($settings, [
-                "canLockBlocks" => false, // Disable locking/unlocking of blocks for non-admins
-                "codeEditingEnabled" => false, // Disable code editing in the gutenberg editor for non-admins
-            ]);
+        foreach(["editor", "author"] as $role) {
+            if (in_array($role, $current_user_roles) && !in_array("administrator", $current_user_roles)) {
+                $settings = array_merge($settings, [
+                    "canLockBlocks" => false, // Disable locking/unlocking of blocks for non-admins
+                    "codeEditingEnabled" => false, // Disable code editing in the gutenberg editor for non-admins
+                ]);
+
+                break;
+            }
         }
     }
 

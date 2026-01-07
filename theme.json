@@ -8,7 +8,41 @@
             "defaultGradients": false,
             "defaultPalette": false,
             "gradients": [],
-            "palette": []
+            "palette": [
+                {
+                    "color": "#fff",
+                    "name": "Base",
+                    "slug": "base"
+                },
+                {
+                    "color": "#333",
+                    "name": "Contrast",
+                    "slug": "contrast"
+                },
+                {
+                    "color": "#89CFF0",
+                    "name": "Primary",
+                    "slug": "primary"
+                }
+            ],
+            "duotone": [
+                {
+                    "colors": [
+                        "#450a0a",
+                        "#fef2f2"
+                    ],
+                    "name": "Red",
+                    "slug": "red"
+                },
+                {
+                    "colors": [
+                        "#172554",
+                        "#eff6ff"
+                    ],
+                    "name": "Blue",
+                    "slug": "blue"
+                }
+            ]
         },
         "layout": {
             "contentSize": "1024px",
@@ -24,19 +58,87 @@
                 "vw"
             ],
             "defaultSpacingSizes": false,
-            "spacingSizes": []
+            "spacingSizes": [
+                {
+                    "name": "Fluid Scale -3",
+                    "size": "clamp( 0.31rem, 0.11vw + 0.28rem,  0.35rem )",
+                    "slug": "minus-3"
+                },
+                {
+                    "name": "Fluid Scale -2",
+                    "size": "clamp( 0.47rem, 0.16vw + 0.42rem,  0.53rem )",
+                    "slug": "minus-2"
+                },
+                {
+                    "name": "Fluid Scale -1",
+                    "size": "clamp( 0.71rem, 0.25vw + 0.63rem,  0.79rem )",
+                    "slug": "minus-1"
+                },
+                {
+                    "name": "Fluid Scale +/- 0 (Base)",
+                    "size": "clamp( 1.06rem, 0.37vw + 0.95rem,  1.19rem )",
+                    "slug": "base"
+                },
+                {
+                    "name": "Fluid Scale +1",
+                    "size": "clamp( 1.20rem, 0.85vw + 0.94rem,  1.48rem )",
+                    "slug": "plus-1"
+                },
+                {
+                    "name": "Fluid Scale +2",
+                    "size": "clamp( 1.34rem, 1.5vw + 0.89rem,  1.86rem )",
+                    "slug": "plus-2"
+                },
+                {
+                    "name": "Fluid Scale +3",
+                    "size": "clamp( 1.86rem, 3.7vw + -0.05rem,  2.32rem )",
+                    "slug": "plus-3"
+                }
+            ]
         },
         "typography": {
             "writingMode": true,
             "defaultFontSizes": false,
             "fluid": true,
-            "fontSizes": [],
-            "fontFamilies": []
+            "fontSizes": [
+                {
+                    "name": "Small",
+                    "slug": "small",
+                    "size": "1em",
+                    "fluid": false
+                },
+                {
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "1.4em",
+                    "fluid": {
+                        "min": "1.2em",
+                        "max": "1.5em"
+                    }
+                },
+                {
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "2em"
+                },
+                {
+                    "name": "Extra Large",
+                    "slug": "x-large",
+                    "size": "2.6em"
+                }
+            ],
+            "fontFamilies": [
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "fontFamily": "system-ui, sans-serif"
+                }
+            ]
         }
     },
     "styles": {
         "typography": {
-            "fontFamily": "var:preset|font-family|arial",
+            "fontFamily": "var:preset|font-family|primary",
             "fontSize": "var:preset|font-size|normal",
             "lineHeight": "1.4"
         },
