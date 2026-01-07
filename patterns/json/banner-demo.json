@@ -1,6 +1,0 @@
-{
-    "__file": "wp_block",
-    "title": "Banner Demo",
-    "content": "<!-- wp:group {\"lock\":{\"move\":true,\"remove\":false},\"style\":{\"spacing\":{\"padding\":{\"top\":\"5em\",\"right\":\"5em\",\"bottom\":\"5em\",\"left\":\"5em\"}}},\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group\" style=\"padding-top:5em;padding-right:5em;padding-bottom:5em;padding-left:5em\"><!-- wp:heading {\"templateLock\":\"contentOnly\"} -->\n<h2 class=\"wp-block-heading\">Some Heading</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"templateLock\":\"contentOnly\"} -->\n<p>Some Paragraph</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->",
-    "syncStatus": "unsynced"
-}
